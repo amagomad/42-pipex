@@ -6,7 +6,7 @@
 /*   By: amagomad <amagomad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 16:43:13 by amagomad          #+#    #+#             */
-/*   Updated: 2024/08/05 14:54:46 by amagomad         ###   ########.fr       */
+/*   Updated: 2024/08/12 16:19:13 by amagomad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,13 +60,13 @@ int	main(int ac, char **av, char **envp)
 	pipex.fd_in = ft_open(av[1], O_RDONLY, 0);
 	if (pipex.fd_in == -1)
 	{
-		fprintf("Error opening input file: %s\n", av[1]);
+		ft_printf("Error opening input file: %s\n", av[1]);
 		exit(EXIT_FAILURE);
 	}
 	pipex.fd_out = ft_open(av[4], O_WRONLY | O_CREAT | O_TRUNC, 0666);
 	if (pipex.fd_out == -1)
 	{
-		fprintf("Error opening output file: %s\n", av[4]);
+		ft_printf("Error opening output file: %s\n", av[4]);
 		close(pipex.fd_in);
 		exit(EXIT_FAILURE);
 	}
