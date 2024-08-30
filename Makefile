@@ -1,5 +1,5 @@
 CC = gcc
-FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 SRC = pipex.c pipex_utils.c
 SRC_P = ft_printf/ft_printf.c ft_printf/ft_putchar_fd.c ft_printf/ft_putstr_fd.c ft_printf/ft_puthex_fd.c ft_printf/ft_putptr_fd.c ft_printf/ft_uputnbr_fd.c ft_printf/ft_putnbr_fd.c
 OBJ = $(SRC:.c=.o)
